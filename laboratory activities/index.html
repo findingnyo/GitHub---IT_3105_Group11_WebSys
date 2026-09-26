@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal & Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Student Information System</h1>
+        <hr>
+    </header>
+
+    <main>
+        <!-- Student Registration Form -->
+        <section id="registration-form">
+            <h2>Student Registration Form</h2>
+            <form>
+                <p>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                </p>
+                <p>
+                    <label for="age">Age:</label><br>
+                    <input type="text" id="age" name="age" placeholder="Enter age" required>
+                </p>
+                <p>
+                    <label>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Prefer not to say</label>
+                </p>
+
+                <!-- Hobbies -->
+                <p>
+                    <label>Hobbies:</label><br>
+                    <input type="checkbox" id="reading" name="hobbies" value="Reading">
+                    <label for="reading">Reading</label>
+
+                    <input type="checkbox" id="coding" name="hobbies" value="Coding">
+                    <label for="coding">Coding</label>
+
+                    <input type="checkbox" id="gaming" name="hobbies" value="Gaming">
+                    <label for="gaming">Gaming</label>
+
+                    <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                    <label for="sports">Sports</label>
+                </p>
+
+                <!-- Course Dropdown -->
+                <p>
+                    <label for="course">Course:</label><br>
+                    <select id="course" name="course" required>
+                        <option value="">Select Course</option>
+                        <option value="BSIT">BSIT</option>
+                        <option value="BSCS">BSCS</option>
+                        <option value="BSIS">BSME</option>
+                        <option value="BSEMC">BSCE</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Lists -->
+        <section id="lists-section">
+            <h2>Lists</h2>
+
+            <!-- Unordered List <ul> -->
+            <h3>Favorite Foods of Group 11</h3>
+            <ul><br>
+                <li>Adobong Aso</li><br>
+                <li>Sinigang na Dinosaur</li><br>
+                <li>Tinolng Palaka</li><br>
+            </ul>
+
+            <!-- Ordered List -->
+            <h3>Pinaka maganda sa IT-3105</h3>
+            <ol><br>
+                <li>Cyrill Arboledo</li><br>
+                <li>Matt Ervin De Villa</li><br>
+                <li>Jun Andrei Manalo</li><br>
+            </ol>
+
+            <!-- Description List -->
+            <h3>Programming Languages by definition</h3>
+            <dl>
+                <dt><strong>HTML</strong></dt><br>
+                <dd>HyperText Markup Language used for structuring web content.</dd><br>
+
+                <dt><strong>CSS</strong></dt><br>
+                <dd>Cascading Style Sheets used for styling web content.</dd><br>
+
+                <dt><strong>JavaScript</strong></dt><br>
+                <dd>A scripting language used for adding animations.</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <!-- Table -->
+        <section id="table-section">
+            <h2>Student Table</h2>
+            <table style="text-align: center;" border="1" cellpadding="10">
+                    <tr>
+                        <th colspan="4">Student Information Table</th>
+                    </tr>
+                    <tr>
+                        <th>SR Code</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Year Level</th>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td>24-03819</td>
+                        <td>Neo Adorza</td>
+                        <td>BSIT</td>
+                        <td>3rd Year</td>
+                    </tr>
+                    <tr>
+                        <td>24-03826</td>
+                        <td>Jun Andrei Manalo</td>
+                        <td>BSIT</td>
+                        <td>3rd Year</td>
+                    </tr>
+                    <tr>
+                        <td>24-01129</td>
+                        <td>Baby Gwen Mendoza</td>
+                        <td>BSIT</td>
+                        <td>3rd Year</td>
+                    </tr>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>

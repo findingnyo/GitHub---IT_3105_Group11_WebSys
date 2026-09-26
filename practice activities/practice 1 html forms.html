@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname">
+        <br>
+        <br>
+        <label for="tel">Telephone:</label>
+            <input type="tel" id="phone" pattern="[0-9] {4}-[0-9]{3}[0-9]{4}">
+        <br>
+        <br>
+
+        <label for="colors">Colors</label>
+        <select id="colors">
+            <option value="pink">Penk</option>
+            <option value="blue">Blu</option>
+            <option value="green">Ngreen</option>
+            <option value="red">Red</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="poke-choice">Choose a Pokemon:</label>
+        <input list="poke-opts" id="poke-choice" name="poke-choice">
+        <datalist id="poke-opts">
+            <option value="Pikachu"></option>
+            <option value="Charmander"></option>
+            <option value="Bulbasaur"></option>
+            <option value="Squirtle"></option>
+        </datalist>
+
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+
+        <br>
+        <br>
+        <button type="reset" value="Clear All">Reset</button>
+
+    </form>
+
+</body>
+</html>
